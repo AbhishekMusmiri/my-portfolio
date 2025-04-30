@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Abhishek Musmiri - Portfolio</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+</head>
+<body>
+  <header>
+    <img src="profile.jpg" alt="Abhishek Musmiri" class="profile-img">
+    <h1>Abhishek Musmiri</h1>
+    <p>Java Developer | Computer Science Graduate</p>
+    <div class="hero-buttons">
+      <button onclick="scrollToSection('projects')"><i class="fas fa-code"></i> View Projects</button>
+      <button onclick="scrollToSection('contact')"><i class="fas fa-envelope"></i> Contact Me</button>
+      <button onclick="downloadResume()"><i class="fas fa-file-download"></i> Download Resume</button>
+    </div>
+  </header>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>Motivated Computer Science graduate passionate about building practical, efficient software solutions. Quick learner, team player, and problem-solver with a strong foundation in Java and SQL.</p>
+  </section>
+
+  <section id="education">
+    <h2>Education</h2>
+    <ul>
+      <li><strong>B.Tech (CSE)</strong> - AVN Institute, Hyderabad (2020–2024) - 6.06 CGPA</li>
+      <li><strong>Intermediate (MPC)</strong> - TMJC, Ibrahimnagar (2018–2020) - 8.6 CGPA</li>
+      <li><strong>SSC</strong> - Telangana Model School (2017–2018) - 9.3 CGPA</li>
+    </ul>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <p>Java, SQL, JDBC, Servlets, HTML, CSS, JavaScript, Git (Basics), AI & ML (Basics)</p>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <h3>Online Food Delivery Application</h3>
+    <p>Developed using Java, MySQL, JSP, Servlets, and JDBC. Features include user authentication, payment integration, restaurant browsing, and order tracking.</p>
+  </section>
+
+  <section id="certifications">
+    <h2>Certifications</h2>
+    <ul>
+      <li>Oracle Java Foundations – LinkedIn</li>
+      <li>SQL & Relational Databases – IBM Skills Network</li>
+    </ul>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p><i class="fas fa-envelope"></i> abhishekmusmiri07@gmail.com</p>
+    <p><i class="fas fa-phone"></i> 7731915537</p>
+    <p><i class="fas fa-map-marker-alt"></i> Hyderabad</p>
+    <button onclick="emailMe()"><i class="fas fa-paper-plane"></i> Email Me</button>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Abhishek Musmiri</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
