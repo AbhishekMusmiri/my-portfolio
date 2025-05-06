@@ -3,67 +3,102 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Abhishek Musmiri - Portfolio</title>
-  <link rel="stylesheet" href="style.css"/>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+  <title>Abhishek Musmiri Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header>
-    <img src="profile.jpg" alt="Abhishek Musmiri" class="profile-img">
     <h1>Abhishek Musmiri</h1>
-    <p>Java Developer | Computer Science Graduate</p>
-    <div class="hero-buttons">
-      <button onclick="scrollToSection('projects')"><i class="fas fa-code"></i> View Projects</button>
-      <button onclick="scrollToSection('contact')"><i class="fas fa-envelope"></i> Contact Me</button>
-      <button onclick="downloadResume()"><i class="fas fa-file-download"></i> Download Resume</button>
-    </div>
+    <nav>
+      <button><a href="#about">About</a></button>
+      <button><a href="#skills">Skills</a></button>
+      <button><a href="#projects">Projects</a></button>
+      <button><a href="#resume">Resume</a></button>
+      <button><a href="#contact">Contact Me</a></button>
+    </nav>
   </header>
 
-  <section id="about">
-    <h2>About Me</h2>
-    <p>Motivated Computer Science graduate passionate about building practical, efficient software solutions. Quick learner, team player, and problem-solver with a strong foundation in Java and SQL.</p>
-  </section>
+  <main>
+    <section id="about">
+      <h2 class="section-title">About Me</h2>
+      <p>
+        I am a passionate computer science graduate who thrives in challenging environments. 
+        With a strong command over Java and SQL, I specialize in backend development and 
+        system design. I enjoy solving real-world problems through elegant code and clean architecture. 
+        I am a quick learner and an effective communicator who believes in teamwork and continuous improvement. 
+        Outside of coding, I enjoy reading about emerging tech and working on personal side projects. 
+        I believe every problem has a solution — it's just a matter of perspective. 
+        My curiosity drives me to explore and experiment with new tools and frameworks. 
+        I'm looking for opportunities where I can contribute, learn, and grow as a developer. 
+        I’m also deeply committed to building user-friendly and efficient software systems. 
+        Let’s build something amazing together!
+      </p>
+    </section>
 
-  <section id="education">
-    <h2>Education</h2>
-    <ul>
-      <li><strong>B.Tech (CSE)</strong> - AVN Institute, Hyderabad (2020–2024) - 6.06 CGPA</li>
-      <li><strong>Intermediate (MPC)</strong> - , Masterminds junior college (2018–2020) - 8.6 CGPA</li>
-      <li><strong>SSC</strong> - Telangana Model School (2017–2018) - 9.3 CGPA</li>
-    </ul>
-  </section>
+    <section id="skills">
+      <h2 class="section-title">Skills</h2>
+      <p>
+        - Proficient in Java, OOP, and backend logic.<br>
+        - Database experience with MySQL, JDBC, and relational schema design.<br>
+        - Basic web skills: HTML5, CSS3, JavaScript for frontend.<br>
+        - API integration using Java Servlets and RESTful principles.<br>
+        - Familiar with Git version control and collaborative tools.<br>
+        - Basics of AI/ML: regression, classification, using Python libraries.<br>
+        - Developed full-stack applications using Java and MySQL.<br>
+        - Comfortable with Eclipse IDE and MySQL Workbench.<br>
+        - Strong problem-solving and debugging abilities.<br>
+        - Learning React.js and Spring Boot for full-stack web apps.
+      </p>
+    </section>
 
-  <section id="skills">
-    <h2>Skills</h2>
-    <p>Java, SQL, JDBC, Servlets, HTML, CSS, JavaScript, Git (Basics), AI & ML (Basics)</p>
-  </section>
+    <section id="projects">
+      <h2 class="section-title">Projects</h2>
+      <p>
+        1. <strong>Online Food Ordering System</strong>:<br>
+        - Developed using Java, JDBC, MySQL, and JSP.<br>
+        - Handles restaurant menus, user login, and payment simulations.<br>
+        - Features include placing orders, viewing history, and admin controls.<br><br>
 
-  <section id="projects">
-    <h2>Projects</h2>
-    <h3>Online Food Delivery Application</h3>
-    <p>Developed using Java, MySQL, JSP, Servlets, and JDBC. Features include user authentication, payment integration, restaurant browsing, and order tracking.</p>
-  </section>
+        2. <strong>Brain Tumor Detection (Academic Project)</strong>:<br>
+        - Used Vision Transformer model and Python for classification.<br>
+        - Dataset preprocessed with OpenCV and TensorFlow.<br>
+        - Achieved high detection accuracy in real-time analysis.<br>
+      </p>
+    </section>
 
-  <section id="certifications">
-    <h2>Certifications</h2>
-    <ul>
-      <li>Oracle Java Foundations – LinkedIn</li>
-      <li>SQL & Relational Databases – IBM Skills Network</li>
-    </ul>
-  </section>
+    <section id="resume">
+      <h2 class="section-title">Resume</h2>
+      <p>
+        My resume highlights my academic journey, technical skills, certifications, 
+        and detailed work on personal and academic projects. It includes internships, 
+        key achievements, and relevant coursework in software development, AI/ML, and databases. 
+        It serves as a snapshot of my potential and readiness for full-time roles. 
+        I update it regularly to reflect new learning and project experiences.
+      </p>
+      <a href="Abhishek Musmiri-ATS Resume.pdf" download class="contact-actions"><button>Download Resume</button></a>
+    </section>
 
-  <section id="contact">
-    <h2>Contact</h2>
-    <p><i class="fas fa-envelope"></i> abhishekmusmiri07@gmail.com</p>
-    <p><i class="fas fa-phone"></i> 7731915537</p>
-    <p><i class="fas fa-map-marker-alt"></i> Hyderabad</p>
-    <button onclick="emailMe()"><i class="fas fa-paper-plane"></i> Email Me</button>
-  </section>
+    <section id="contact">
+      <h2 class="section-title">Contact Me</h2>
+      <p>
+        Thank you for visiting my portfolio! I'm actively looking for job opportunities where I can 
+        grow as a developer and contribute meaningfully. If you'd like to get in touch, 
+        feel free to use the contact methods below. I'm just one click away!
+      </p>
+      <div class="contact-actions">
+        <button onclick="showPhoneNumber()">Show Phone Number</button>
+        <a href="tel:7731915537">Call Now</a>
+        <a href="mailto:abhishekmusmiri07@gmail.com">Send Email</a>
+        <a href="https://www.linkedin.com/in/abhishek-musmiri" target="_blank">Visit LinkedIn</a>
+      </div>
+    </section>
+  </main>
 
   <footer>
-    <p>&copy; 2025 Abhishek Musmiri</p>
+    <p>© 2025 Abhishek Musmiri. All rights reserved.</p>
   </footer>
 
   <script src="script.js"></script>
 </body>
 </html>
+
